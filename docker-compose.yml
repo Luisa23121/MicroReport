@@ -1,0 +1,19 @@
+﻿version: "3.8"
+
+services:
+  db:
+    image: mysql:8.0
+    container_name: microreport_db
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: root123
+      MYSQL_DATABASE: microreportdb
+      MYSQL_USER: micro_user
+      MYSQL_PASSWORD: micro_pass
+    ports:
+      - "3306:3306"
+    volumes:
+      - db-data:/var/lib/mysql
+
+volumes:
+  db-data:

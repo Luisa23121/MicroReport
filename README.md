@@ -5,7 +5,7 @@ Spring Boot service for report generation
 - [Names to be added]
 
 ## Technologies
-- Java 17
+- Java 21
 - Spring Boot 3.x
 - Maven
 
